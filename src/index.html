@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chuck Norris jokes app</title>
+  </head>
+
+  <body class="container">
+    <header>
+      <div class="nav-wrap"> 
+        <img class="logo" src="./images/svg/logo.svg" />
+        <div class="fav-wrap">
+        <div class="open-fav"></div>
+        <p class="fav_text">Favourite</p>
+      </div>
+      </div>
+    </header>
+    <main>
+      <section class="select">
+        <h1 class="title">
+          <span class="title__span">Hey!</span>Let's try to find a joke for you:
+        </h1>
+        <label><input name="radio" type="radio" class="random" />Random</label>
+        <div class="category__input">
+          <label
+            ><input
+              name="radio"
+              type="radio"
+              class="category__input_categories categories"
+            />From categories</label
+          >
+          <ul class="categories__list"></ul>
+        </div>
+
+        <label><input name="radio" type="radio" class="search" />Search</label>
+        <div class="searchInputWrap"></div>
+        <button class="button" type="submit">Get a joke</button>
+      </section>
+      <section>
+        <ul class="jokes__list"></ul>
+      </section>
+    </main>
+  </body>
+</html>

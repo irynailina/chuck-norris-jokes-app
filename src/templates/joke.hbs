@@ -1,0 +1,19 @@
+<li class="jokes__item">
+  <button class="heart"></button>
+  <div class="jokes__item_wrap">
+    <div class="jokes__item_url-wrap">
+      <span "jokes__item_id">ID:</span><a target="_blank" href={{url}} class="jokes__item_link">{{url}}</a>
+    </div>
+    <div class="jokes__item_text-wrap">
+      <p class="jokes__item_text">{{value}}</p>
+    </div>
+    <p class="jokes__item_update">Last update: {{created_at}}</p>
+    <div class="jokes__item_category-wrap">
+      {{#if categories.length}}
+      <p class="jokes__item_category">{{categories}}</p>
+      {{else}}
+      <p class="jokes__item_category">no category</p>
+      {{/if}}
+    </div>
+  </div>
+</li>
