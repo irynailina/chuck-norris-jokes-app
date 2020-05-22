@@ -17,7 +17,6 @@ export function addFavourite() {
 
 export function renderFavouriteJokes() {
   const localStorageJokesList = storageMethods.load('jokes');
-  console.log(localStorageJokesList);
   if (localStorageJokesList.length > 0) {
     const markup = localStorageJokesList
       .map(joke => jokeTemplate(joke))

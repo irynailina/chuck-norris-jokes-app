@@ -40,7 +40,6 @@ function getRandomJoke() {
   fetchRandomJoke().then(response => {
     response.data.url.slice(0, 8);
     currentJoke = response.data;
-    console.log(currentJoke);
     const markup = jokeTemplate(response.data);
     refs.jokesList.innerHTML = markup;
   });
@@ -118,13 +117,9 @@ function handleClear() {
 // favourites
 
 function handleAddToFavourite(e) {
-  // console.log(e.target);
   if (e.target.nodeName === 'BUTTON') {
     const button = document.querySelector('.heart');
     button.classList.add('heart-fill');
-    // currentJoke.forEach(joke => addFavourite())
-    // addFavourite();
-    console.log(currentJoke);
   }
 }
 
@@ -132,13 +127,11 @@ function handleOpenFavourites() {
   renderFavouriteJokes();
   refs.favOpenImg.classList.add('close-fav');
   const closeFavImg = document.querySelector('.close-fav');
-  console.log(closeFavImg);
   closeFavImg.addEventListener('click', handleCloseFavourites);
 }
 
 function handleCloseFavourites() {
   const closeFavImg = document.querySelector('.close-fav');
-  console.log(closeFavImg);
   closeFavImg.classList.remove('close-fav');
   closeFavImg.classList.add('open-fav');
   renderHomePage();
@@ -146,21 +139,7 @@ function handleCloseFavourites() {
 
 function renderHomePage() {
   refs.mainSection.innerHTML = homePageTemplate();
-  console.log(refs.getJokeBtn);
   const jokeButton = document.querySelector('.button');
   const random = document.querySelector('.random');
   jokeButton.addEventListener('click', () => console.log(111));
-  console.log(handleShowJoke);
-
-  //  if  (refs.radioRandom.checked) {
-  //    fetchRandomJoke().then(response => {
-  //     response.data.url.slice(0, 8);
-  //     currentJoke = response.data;
-  //     console.log(currentJoke);
-  //     const markup = jokeTemplate(response.data);
-  //     refs.jokesList.innerHTML = markup;
-  //   });
-  //  }
-  // handleShowJoke();
-  // handleShowSearchInput()
 }

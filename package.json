@@ -17,9 +17,9 @@
   "author": "Iryna Ilina <irynailina@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/irynailina/goit-js-hw-12-countries/issues"
+    "url": "https://github.com/irynailina/chuck-norris-jokes-app/issues"
   },
-  "homepage": "https://irynailina.github.io/goit-js-hw-12-countries/",
+  "homepage": "https://irynailina.github.io/chuck-norris-jokes-app",
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
